@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Assignment 33</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./Img/images.jpg" class="logo" alt="">
+        <p>Welcome back to Instagram. Sign in to check out what your friends ...</p>
+        <button class="login-btn" onclick="openDialogueBox()">Let 's Go</button>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img src="./Img/close.png" class="close-btn" onclick="closeDialogueBox()()">
+            <form class="login-form">
+                <h3>Login</h3>
+                <input type="text" placeholder="Phone number, username or email address" class="form-input">
+                <input type="password" placeholder="Password" class="form-input">
+                <button class="login-btn">Log in</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function openDialogueBox() {
+            const modalElement = document.getElementById('modal');
+            modalElement.style.display = 'flex';
+        }
+        function closeDialogueBox() {
+            const modalElement = document.getElementById('modal');
+            modalElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
